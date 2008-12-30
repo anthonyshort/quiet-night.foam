@@ -71,7 +71,7 @@ ee.tag.self-closing > name > attribute-name { color:#9ecffd;}
 /* 
 	HTML
 */
-
+html {spell-check:enabled;}
 
 /* 
 	CSS
@@ -81,12 +81,23 @@ css selector.css 							{ color:#DE5A00; }
 css property-list > property-value 	{ color:#8af299; }
 css property-list > property-name 		{ color:#9ecffd; }
 css color 									{ color:#FBDE2D;} 
+css group-start, css comment, css comment punctuation		{ color:#557;}
+css itemize.group-end.comment.block.css {
+	color:rgba(44,44,66,0.8);
+}
+
+css group-start name						{ color:#9ecffd; font-weight:bold;}
+
 
 
 /* 
 	PHP
 */
-
+php function {color:#DE5A00;}
+php meta.include.php {background-color:#0C1021;}
+php variable.php, php variable.php > punctuation.variable.php {background-color:#0C1021;color:#FBDE2D;}
+php include {background-color:#0C1021;}
+php keyword.control.import.include.php {background-color:#0C1021;}
 
 
 /* 
@@ -94,63 +105,8 @@ css color 									{ color:#FBDE2D;}
 */
 
 
-latex.function function - parameter, latex.keyword {
-	color:;
-}
-
-string.quoted {
-	color: ;
-}
-
-string.quoted > escape {
-	background-color: #e8ffd5;
-	font-weight: bold;
-}
-
-variable {
-	color: ;
-}
-
-variable>punctuation {
-	color: ;
-}
-
-operator {
-	color: ;
-}
-
-open-bracket, close-bracket {
-	color: ;
-}
-
-support.function, function-call {
-	color: ;
-	font-weight: bold;
-}
-
-keyword.control, storage.type {
-	color:;
-}
-
-function > name {
-	color:;
-	font-weight: bold;
-}
-
-js.embedded {
-	color: ;
-}
-
-constant.numeric, constant.language {
-	color: ;
-	background-color: #f3f2ff;
-}
-
 invalid {
 	background-color: #f93232;
 	color: ;
 }
 
-textile > header {
-	font-weight: bold;
-}
