@@ -42,7 +42,7 @@ comment>punctuation,
 tag.doctype, 
 tag.doctype > *, 
 tag.doctype > string.quoted 
-{ color: #AEAEAE; }
+{ color: #557; }
 
 string double, string single{ 
 color:#8af299;
@@ -93,11 +93,17 @@ css group-start name						{ color:#9ecffd; font-weight:bold;}
 /* 
 	PHP
 */
+php { color:rgba(220,220,255,0.9);}
 php function {color:#DE5A00;}
 php meta.include.php {background-color:#0C1021;}
-php variable.php, php variable.php > punctuation.variable.php {background-color:#0C1021;color:#FBDE2D;}
+php variable.other.php, php variable.php > punctuation.variable.php {background-color:#0C1021;color:#FBDE2D;}
 php include {background-color:#0C1021;}
 php keyword.control.import.include.php {background-color:#0C1021;}
+php keyword.control.php { color:#9ecffd;}
+php variable.other.global.php, php variable.other.global.php > punctuation.variable.php {  color:#9ecffd;}
+php constant.numeric { color:#8af299; }
+php punctuation.section.embedded { color:#f93232;}
+php meta.function-call {color:#9ecffd; font-weight:bold;}
 
 
 /* 
@@ -107,6 +113,5 @@ php keyword.control.import.include.php {background-color:#0C1021;}
 
 invalid {
 	background-color: #f93232;
-	color: ;
 }
 
