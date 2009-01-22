@@ -21,7 +21,7 @@ entity.name.section #FFFFFF
 
 @base {
 	color:#F8F8F8;
-	background-color:#0C1021;
+	background-color:rgba(12,16,33,0.94);
 	insertion-point-color: #fff;
 	selection-background-color: #253B76;
 }
@@ -82,12 +82,39 @@ css property-list > property-value 	{ color:#8af299; }
 css property-list > property-name 		{ color:#9ecffd; }
 css color 									{ color:#FBDE2D;} 
 css group-start, css comment, css comment punctuation		{ color:#557;}
+
 css itemize.group-end.comment.block.css {
 	color:rgba(44,44,66,0.8);
 }
 
-css group-start name						{ color:#9ecffd; font-weight:bold;}
+css group-start name	{ 
+	color:#9ecffd; 
+	font-weight:bold;
+}
 
+css at-rule {
+	color:#8af299;
+}
+
+css at-rule keyword {
+	color:#DE5A00;
+}
+css at-rule punctuation.end { 
+	color: #fff; 
+	} 
+css support.function.url, css punctuation.section.function {
+	color:#9ecffd; 
+}
+css variable.url {
+	color:#8af299;
+}
+css identifier.variable {
+	color:#8a2a85; 
+	background-color:#212537;
+}
+css identifier.variable.value { 
+	color:#d144ca;
+}
 
 
 /* 
