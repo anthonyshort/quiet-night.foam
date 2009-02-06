@@ -1,0 +1,152 @@
+/*
+	@theme Quiet Night
+	@override-placeholders html, css, php
+*/
+
+/* 
+constant #D8FA3C
+entity #DE5A00
+keyword #FBDE2D
+storage #FBDE2D
+string #61CE3C
+support #8DA6CE
+var color #F8F8F8 bg #17481A
+invalid bg #AB2A1D color #F8F8F8
+superclass #FF6400
+meta.function-call.py #BECDE6
+meta.tag #7F90AA
+entity.name.section #FFFFFF 
+*/
+
+
+@base {
+	color:#F8F8F8;
+	background-color:rgba(12,16,33,0.90);
+	insertion-point-color: #fff;
+	selection-background-color: #253B76;
+}
+
+tag, source, sourcecode { spell-check: disabled; }
+
+tag, 
+string > punctuation, 
+attribute-name,
+entity
+{ color:#7F90AA; }
+
+string { color:#61CE3C;}
+
+
+comment, 
+comment>punctuation, 
+tag.doctype, 
+tag.doctype > *, 
+tag.doctype > string.quoted 
+{ color: #557; }
+
+string double, string single{ 
+color:#8af299;
+}
+
+processing-instruction { color:#aeaeae; }
+
+/* 
+	ExpressionEngine Tags
+*/
+
+/*ee.tag {background:rgba(90,54,133,0.1);} */
+
+ee.tag>name, 
+ee.tag > punctuation,
+ee.tag > string,
+ee.tag.conditional { color:#8af299; }
+ee.attribute-name  {
+	color:#8af299;
+}
+ee.attribute-value { 
+	color:#d144ca;
+	background-color:#212537;
+	font-weight:bold; 
+}
+
+ee.tag.self-closing,
+ee.tag.self-closing > name, 
+ee.tag.self-closing > punctuation, 
+ee.tag.self-closing ee.attribute-name { color:#9ecffd;}
+
+/* 
+	HTML
+*/
+html {spell-check:enabled;}
+
+/* 
+	CSS
+*/
+
+css selector.css 							{ color:#DE5A00; }
+css property-list > property-value 	{ color:#8af299; }
+css property-list > property-name 		{ color:#9ecffd; }
+css color 									{ color:#FBDE2D;} 
+css group-start, css comment, css comment punctuation		{ color:#557;}
+
+css itemize.group-end.comment.block.css {
+	color:rgba(44,44,66,0.8);
+}
+
+css group-start name	{ 
+	color:#9ecffd; 
+	font-weight:bold;
+}
+
+css at-rule {
+	color:#8af299;
+}
+
+css at-rule keyword {
+	color:#DE5A00;
+}
+css at-rule punctuation.end { 
+	color: #fff; 
+	} 
+css support.function.url, css punctuation.section.function {
+	color:#9ecffd; 
+}
+css variable.url {
+	color:#8af299;
+}
+css identifier.variable {
+	color:#8a2a85; 
+	background-color:#212537;
+	font-weight:bold;
+}
+css identifier.variable.value { 
+	color:#d144ca;
+	font-weight:normal;
+}
+css zkeyword.other.italic 	{ font-style:italic; }
+css zkeyword.other.bold		{ font-weight:bold; }
+/* 
+	PHP
+*/
+php { color:rgba(220,220,255,0.9);}
+php function {color:#DE5A00;}
+php meta.include.php {background-color:#0C1021;}
+php variable.other.php, php variable.php > punctuation.variable.php {background-color:#0C1021;color:#FBDE2D;}
+php include {background-color:#0C1021;}
+php keyword.control.import.include.php {background-color:#0C1021;}
+php keyword.control.php { color:#9ecffd;}
+php variable.other.global.php, php variable.other.global.php > punctuation.variable.php {  color:#9ecffd;}
+php constant.numeric { color:#8af299; }
+php punctuation.section.embedded { color:#f93232;}
+php meta.function-call {color:#9ecffd; font-weight:bold;}
+
+
+/* 
+	JS
+*/
+
+
+invalid {
+	background-color: #f93232;
+}
+
