@@ -1,6 +1,6 @@
 /*
 	@theme Quiet Night
-	@override-placeholders html, css, php
+	@override-placeholders html, css, sourcecode.php
 */
 
 /* 
@@ -21,7 +21,7 @@ entity.name.section #FFFFFF
 
 @base {
 	color:#F8F8F8;
-	background-color:rgba(12,16,33,0.90);
+	background-color:rgba(12,16,33,0.95);
 	insertion-point-color: #fff;
 	selection-background-color: #253B76;
 }
@@ -38,6 +38,9 @@ string { color:#61CE3C;}
 
 
 comment, 
+comment *,
+comment.block,
+comment.line.double-slash,
 comment>punctuation, 
 tag.doctype, 
 tag.doctype > *, 
@@ -129,16 +132,18 @@ css zkeyword.other.bold		{ font-weight:bold; }
 	PHP
 */
 php { color:rgba(220,220,255,0.9);}
-php function {color:#DE5A00;}
-php meta.include.php {background-color:#0C1021;}
-php variable.other.php, php variable.php > punctuation.variable.php {background-color:#0C1021;color:#FBDE2D;}
-php include {background-color:#0C1021;}
-php keyword.control.import.include.php {background-color:#0C1021;}
-php keyword.control.php { color:#9ecffd;}
-php variable.other.global.php, php variable.other.global.php > punctuation.variable.php {  color:#9ecffd;}
-php constant.numeric { color:#8af299; }
-php punctuation.section.embedded { color:#f93232;}
-php meta.function-call {color:#9ecffd; font-weight:bold;}
+function {color:#DE5A00;}
+meta.include.php {background-color:#0C1021;}
+variable.other, variable > punctuation.variable {color:#d144ca;
+	background-color:#212537;
+	font-weight:bold; ;}
+include {background-color:#0C1021;}
+keyword.control.import.include {background-color:#0C1021;}
+keyword.control{ color:#9ecffd;}
+
+constant.numeric { color:#8af299; }
+punctuation.section.embedded { color:#f93232;}
+meta.function-call {color:#9ecffd; font-weight:bold;}
 
 
 /* 
