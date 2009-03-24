@@ -57,20 +57,22 @@ processing-instruction { color:#aeaeae; }
 ee.tag>name, 
 ee.tag > punctuation,
 ee.tag > string,
-ee.tag.conditional { color:#8af299; }
-ee.attribute-name  {
-	color:#8af299;
-}
-ee.attribute-value { 
-	color:#d144ca;
-	background-color:#212537;
+ee.tag.conditional { color:#8ce999; }
+
+ee ee.tag attribute-name  {
+	color:#9ecffd;
 	font-weight:bold; 
 }
+ee ee.tag attribute { 
+	color:#d144ca;
+}
 
-ee.tag.self-closing,
-ee.tag.self-closing > name, 
-ee.tag.self-closing > punctuation, 
-ee.tag.self-closing ee.attribute-name { color:#9ecffd;}
+ee tag.self-closing.conditional { background:rgba(37,59,118,0.35);}
+
+ee tag.self-closing,
+ee tag.self-closing > name, 
+ee tag.self-closing > punctuation, 
+ee tag.self-closing attribute-name { color:#9ecffd;}
 
 /* 
 -----------------------------------------------------
