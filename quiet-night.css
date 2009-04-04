@@ -1,6 +1,6 @@
 /*
 	@theme QuietNight
-	@override-placeholders html, xml, css, php, sourcecode.js, ee
+	@override-placeholders html, xml, css, php, sourcecode.js
 */
 
 
@@ -52,27 +52,25 @@ processing-instruction { color:#aeaeae; }
 -----------------------------------------------------
 */
 
-/*ee.tag {background:rgba(90,54,133,0.1);} */
-
-ee.tag>name, 
+ee.tag > name, 
 ee.tag > punctuation,
 ee.tag > string,
 ee.tag.conditional { color:#8ce999; }
 
-ee ee.tag attribute-name  {
+ee.tag attribute-name  {
 	color:#9ecffd;
 	font-weight:bold; 
 }
-ee ee.tag attribute { 
+ee.tag attribute { 
 	color:#d144ca;
 }
 
-ee tag.self-closing.conditional { background:rgba(37,59,118,0.35);}
+ee.tag.self-closing.conditional { background:rgba(37,59,118,0.35);}
 
-ee tag.self-closing,
-ee tag.self-closing > name, 
-ee tag.self-closing > punctuation, 
-ee tag.self-closing attribute-name { color:#9ecffd;}
+ee.tag.self-closing,
+ee.tag.self-closing > name, 
+ee.tag.self-closing > punctuation, 
+ee.tag.self-closing attribute-name { color:#9ecffd;}
 
 /* 
 -----------------------------------------------------
@@ -200,7 +198,63 @@ php method.name
 { color:#3df5ff;}
 
 
+php integral{
+	color: #fff;
+	background:#0C1021;
+}
 
+/* General */
+
+
+/* Functions */
+identifier.function
+{
+	color:#9ef29f;
+}
+identifier.function.support > begin
+{
+	color:#DE5A00;
+}
+
+/* Variables */
+variable,
+identifier.variable.instance.class
+variable > group,
+variable.other,  /* Legacy */
+variable > punctuation.variable /* Legacy*/ 
+{
+	color:#d144ca;
+	font-weight:bold;
+}
+
+/* Keywords */
+keyword.control.include,
+keyword.control,
+modifier
+{ 
+	color:#9ecffd;
+	background-color:#0C1021;
+}
+
+/* Constants */
+keyword.constant 
+{ 
+	color:#78e0ff; 
+}
+
+function name 
+{ 
+	color:#9ef29f;
+}
+
+method.name
+{ color:#3df5ff;}
+
+
+integral{
+	color: #fff;
+	background:#0C1021;
+}
 
 
 /* 
